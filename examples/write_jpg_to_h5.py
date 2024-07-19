@@ -45,6 +45,7 @@ def main() -> None:
 
     # Write the data and label to the HDF5 file.
     write_data_and_label(file_path, dataset_name, data_array, label_array)
+    print(f"Data and label written to {file_path}")
 
     # Print the structure of the HDF5 file.
     with h5py.File(file_path, 'r') as file:
